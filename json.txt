@@ -11,7 +11,7 @@ cat >> new.json
 "name": "Хохлов Аексей Леонидович",
 "age": 26,
 "pets":0,
-"future salary": 50000
+"future_salary": 50000
 }
 ctrl + C
 11. Отправить изменения на внешний репозиторий. 
@@ -23,10 +23,10 @@ touch preferences.json
 13. В файле preferences.json добавьте информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона, которую вы хотели бы посетить) в формате JSON. 
 cat >> preferences.json
 {
-"favorite movie": "Гарри Поттер",
-"favorite TV show": "нет одного самого любимого",
-"favorite food":"шашлык",
-"favorite time of year": "summer"
+"favorite_movie": "Гарри Поттер",
+"favorite_TV_show": "нет одного самого любимого",
+"favorite_food":"шашлык",
+"favorite_time_of_year": "summer"
 }
 ctrl + C
 git add preferences.json
@@ -45,13 +45,13 @@ git push
 17. Сделать Зафиксировать изменения (сохранить) изменения на веб-интерфейсе - commit changes
 18. На веб-интерфейсе измените файл bug_report.json, добавьте отчет об ошибках в формате JSON. 
 {
-"ID":""
-"Заголовок":""
-"Шаги воспроизведения":""
- "Ожидаемый результат":""
- "Фактический результат":""
- "Окружение":""
- "Приоритет":""
-} 
+"ID": "",
+"Header": "",
+"Play_steps": "",
+"Expected_result": "",
+"Actual_result": "",
+"Environment": "",
+"Priority": ""
+}
 19. Сделать фиксацию изменений (сохранить) изменения на веб-интерфейсе. - commit changes
 20. Синхронизировать внешний и локальный репозиторий JSON - git pull
