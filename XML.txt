@@ -8,14 +8,14 @@ XML
  26. Отправить файл на внешний GitHub репозиторий. - git push
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
  cat >> new.xml
- <?xml version="1.0"?>
- <person>
- <firstName>Alex</firstName>
- <lastName>Khokhlov</lastName>
- <age>26</age>
- <pets>0</pets>
- <future_salary>50000</future_salary>
- </person>
+<?xml version="1.0"?>
+<person>
+<firstName>Alex</firstName>
+<lastName>Khokhlov</lastName>
+<age>26</age>
+<pets>0</pets>
+<FutureSalary>50000</FutureSalary>
+</person>
  ctrl + C
  28. Отправить изменения на внешний репозиторий.
  git add new.xml
@@ -24,13 +24,12 @@ XML
  29. Создать файл preferences.xml - touch preferences.xml
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
  cat >> preferences.xml
- <?xml version="1.0"?>
- <hobbies>
- <favorite movie>Гарри Поттер</favorite movie>
- <favorite TV show>Нет одного самого любимого</favorite TV show>
- <favorite food>шашлык</favorite food>
- <favorite time of year>summer</favorite time of year>
- </hobbies>
+  <Hobbies>
+ <FavoriteMovie>Гарри Поттер</FavoriteMovie>
+ <FavoriteTVShow>Нет одного самого любимого</FavoriteTVShow>
+ <FavoriteFood>шашлык</FavoriteFood>
+ <FavoriteTimeOfYear>summer</FavoriteTimeOfYear>
+ </Hobbies>
  ctrl + C
  git add sklls.xml
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
@@ -49,13 +48,13 @@ XML
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
   <?xml version="1.0"?>
   <bug_report>
-    <ID>1 </ID>
-    <Заголовок></Заголовок>
-    <Шаги воспроизведения></Шаги воспроизведения>
-    <Ожидаемый результат></Ожидаемый результат>
-    <Фактический результат></Фактический результат>
-    <Окружение></Окружение>
-    <Приоритет></Приоритет>
+  <ID></ID>
+  <Header></Header>
+  <PlaySteps></PlaySteps>
+  <ExpectedResult></ExpectedResult>
+  <ActualResult></ActualResult>
+  <Environment></Environment>
+  <Priority></Priority>
   </bug_report>
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
  38. Синхронизировать внешний и локальный репозиторий XML - git pull
